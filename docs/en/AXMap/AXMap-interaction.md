@@ -20,7 +20,7 @@ none
 ...
 axMap.setAreaMap("<areaId>");
 ...
-````
+```
 
 ## `setMapCenter(coordinates) -> {void}`
 
@@ -42,7 +42,7 @@ none
 ...
 axMap.setMapCenter([0, 0]);
 ...
-````
+```
 
 ## `zoomTo(zoom) -> {void}`
 
@@ -64,7 +64,7 @@ none
 ...
 axMap.zoomTo(10);
 ...
-````
+```
 
 ## `fly(coordinates) -> {void}`
 
@@ -86,7 +86,7 @@ none
 ...
 axMap.fly([0, 0]);
 ...
-````
+```
 
 ## `getCurrentPointPosition(featureId) -> {object}`
 
@@ -114,7 +114,7 @@ const pose = axMap.getCurrentPointPosition("<featureId>");
 
 console.log(pose); // {x:1, y: 2, yaw: 3}
 ...
-````
+```
 
 ## `getFeature(id) -> {object}`
 
@@ -136,7 +136,7 @@ feature information; structure reference [https://geojson.org/](https://geojson.
 ...
 const feature = axMap.getFeature("<featureId>");
 ...
-````
+```
 
 ## `getPlaceList() -> {any}`
 
@@ -156,7 +156,7 @@ List of location points; structure reference [https://geojson.org/](https://geoj
 ...
 const list = axMap.getPlaceList();
 ...
-````
+```
 
 ## `setClickMapCallback(callback) -> {void}`
 
@@ -181,7 +181,7 @@ axMap.setClickMapCallback(val => {
   console.log(val.data); // Clicked element, data structure reference GeoJSON
 });
 ...
-````
+```
 
 ## `setSelectedFeatures(featureId) -> {void}`
 
@@ -203,4 +203,4 @@ none
 ...
 axMap.setSelectedFeatures("<featureId>");
 ...
-````
+```

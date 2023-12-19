@@ -6,7 +6,7 @@ Define the map container in the HTML file:
 ...
 <div id="map" style="width:100%;height:500px;"></div>
 ...
-````
+```
 
 Initialize the map
 
@@ -25,6 +25,6 @@ const axMap = axRobot.createMap("map"); // map is the id of the HTML container t
 axMap.setAreaMap("<areaId>"); // areaId is the map area identifier
 
 // do something with map
-````
+```
 
 [example](../example/#/showmap)

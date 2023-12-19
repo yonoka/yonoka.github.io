@@ -23,7 +23,7 @@ The beautified image address
 ...
 const newImg = await axMap.beautifyMapImg("<imgUrl>", {...}, {...}, {...});
 ...
-````
+```
 
 ## `project(coordinates) -> {array.<number>}`
 
@@ -45,7 +45,7 @@ Converted pixel offset
 ...
 const pixel = axMap.project([0, 0]);
 ...
-````
+```
 
 ## `destroy() -> {void}`
 
@@ -65,4 +65,4 @@ none
 ...
 axMap.destroy();
 ...
-````
+```
