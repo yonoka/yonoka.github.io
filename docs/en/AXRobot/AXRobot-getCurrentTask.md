@@ -12,7 +12,7 @@ Get information about the currently executing task.
 
 ### Example
 
-````javascript
+```javascript
 ...
 let task = await axRobot.getCurrentTask();
 console.log(task.isCancel); // Whether the task has been canceled
@@ -30,4 +30,4 @@ console.log(task.busiType); // business type
 console.log(task.isDel); // Is it deleted
 console.log(task.taskId); // task ID
 ...
-````
+```

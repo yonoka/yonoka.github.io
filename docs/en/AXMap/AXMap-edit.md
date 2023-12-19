@@ -18,7 +18,7 @@ none
 ...
 axMap.clearAreaMap();
 ...
-````
+```
 
 ## `clearFeature() -> {void}`
 
@@ -38,7 +38,7 @@ none
 ...
 axMap.clearFeature();
 ...
-````
+```
 
 ## `deleteFeature(id) -> {void}`
 
@@ -60,7 +60,7 @@ none
 ...
 axMap.deleteFeature("<featureId>");
 ...
-````
+```
 
 ## `editPose(coordinates, properties opt) -> {void}`
 
@@ -83,7 +83,7 @@ none
 ...
 axMap.editPose([0, 0]);
 ...
-````
+```
 
 ## `endEditPose() -> {object}`
 
@@ -103,4 +103,4 @@ Edited pose
 ...
 const post = axMap.endEditPose();
 ...
-````
+```

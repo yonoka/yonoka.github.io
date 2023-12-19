@@ -25,4 +25,4 @@ if (successed) {
    // initialization failed
    ...
 }
-````
+```

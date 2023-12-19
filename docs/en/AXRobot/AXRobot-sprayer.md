@@ -21,11 +21,11 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 const success = await axRobot.openSprayer("<gear>");
 ...
-````
+```
 
 
 
@@ -42,8 +42,8 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 const success = await axRobot.closeSprayer();
 ...
-````
+```

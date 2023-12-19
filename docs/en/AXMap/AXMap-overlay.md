@@ -27,7 +27,7 @@ axMap.addPoint([0, 0], {
   enableSelect: true // whether to allow selection
 });
 ...
-````
+```
 
 ## `addLine(coordinates, properties opt) -> {string}`
 
@@ -54,7 +54,7 @@ axMap.addLine([[0, 0], [10, 10], {
   dash: 'dash' // dashed line
 });
 ...
-````
+```
 
 ## `addMarker(imgSrc, coordinates, yaw) -> {any}`
 
@@ -78,7 +78,7 @@ marker object
 ...
 const marker = axMap.addMarker("<imgSrc>", [0, 0], 0);
 ...
-````
+```
 
 ## `setMarkerProperties(marker, coordinates, yaw) -> {void}`
 
@@ -102,7 +102,7 @@ none
 ...
 axMap.setMarkerProperties(marker, [1, 1], 0);
 ...
-````
+```
 
 ## `removeMarker(marker) -> {void}`
 
@@ -124,4 +124,4 @@ none
 ...
 axMap.removeMarker(marker);
 ...
-````
+```

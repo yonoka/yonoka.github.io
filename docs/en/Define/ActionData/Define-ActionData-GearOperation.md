@@ -17,4 +17,4 @@ Operation parameters of sprayer
      "subType": 2
    }
 }
-````
+```

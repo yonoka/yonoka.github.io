@@ -16,7 +16,7 @@ task node information
 
 ## Example
 
-````json
+```json
 {
   "x": 0.11,
   "y": 1.22,
@@ -26,4 +26,4 @@ task node information
   "ext": {...},
   "stepActs": [...]
 }
-````
+```

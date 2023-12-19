@@ -19,4 +19,4 @@ Action parameters for closing the door
      "doorIds": [1]
    }
 }
-````
+```

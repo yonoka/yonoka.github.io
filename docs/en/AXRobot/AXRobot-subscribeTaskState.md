@@ -16,7 +16,7 @@ Subscribe to task status.
 
 ### Example
 
-````javascript
+```javascript
 ...
 axRobot.startTask({
    onTaskChanged: (state: any) => {
@@ -25,4 +25,4 @@ axRobot.startTask({
    }
 });
 ...
-````
+```

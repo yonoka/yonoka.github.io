@@ -21,7 +21,7 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 let task = {
    name: "More Food Delivery",
@@ -49,4 +49,4 @@ let task = {
 }
 const success = await axRobot.startTask(task);
 ...
-````
+```

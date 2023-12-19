@@ -1,8 +1,9 @@
 site_name: AXSDK
 
-repo_url: https://github.com/yonoka/doc
-repo_name: yonoka/doc
+repo_url: https://github.com/yonoka/yonoka.github.io
+repo_name: yonoka/yonoka.github.io
 
+site_url: 'https://yonoka.github.io/'
 
 theme:
   name: material
@@ -100,7 +101,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
+      linenums: true # 显示行号
+      auto_title: true # 显示编程语言名称
+      #line_spans: __span
       pygments_lang_class: true
 
     

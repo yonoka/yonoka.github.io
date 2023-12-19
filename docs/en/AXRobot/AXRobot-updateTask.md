@@ -20,9 +20,9 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 
 const success = await axRobot.updateTask("<taskId>", <pts>);
 ...
-````
+```

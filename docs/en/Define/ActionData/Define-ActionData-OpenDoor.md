@@ -19,6 +19,6 @@ Open box door action parameters
      "doorIds": [1]
    }
 }
-````
+```
 
 ###

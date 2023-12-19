@@ -21,7 +21,7 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 let lightBelt = {
   mode: 1,
@@ -32,7 +32,7 @@ let lightBelt = {
 }
 const success = await axRobot.openLightBelt(lightBelt);
 ...
-````
+```
 
 
 
@@ -55,7 +55,7 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 let lightBelt = {
 mode: 1,
@@ -66,4 +66,4 @@ indexes: [
 }
 const success = await axRobot.closeLightBelt(lightBelt);
 ...
-````
+```

@@ -22,12 +22,12 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 // Open the door of box 1
 const success = await axRobot.openBoxDoor([1], 1);
 ...
-````
+```
 
 
 
@@ -51,9 +51,9 @@ whether succeed
 
 ### Example
 
-````javascript
+```javascript
 ...
 // close door 2
 const success = await axRobot.closeBoxDoor([2], 1);
 ...
-````
+```

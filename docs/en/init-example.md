@@ -26,7 +26,7 @@ if (successed) {
    // initialization failed
 }
 
-````
+```
 
 > * **appId** - the application ID, which can be applied to relevant operators
 > * **appSecret** - data request key, which can be provided to relevant operators

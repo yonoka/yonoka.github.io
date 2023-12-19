@@ -26,4 +26,4 @@ Turn on the light strip action parameter Action parameter
      ]
    }
 }
-````
+```
