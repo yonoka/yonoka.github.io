@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://yonoka.github.io/zh/AXMap/AXMap-overlay/">
+      
       
         <link rel="prev" href="../AXMap-other/">
       
@@ -289,23 +291,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -401,26 +386,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
@@ -454,10 +419,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -468,8 +433,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             En
           </label>
@@ -964,10 +929,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -978,8 +943,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Zh
           </label>
@@ -1128,10 +1093,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1142,8 +1107,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             AXMap
           </label>
@@ -2162,16 +2127,24 @@
 <h3 id="string">返回值 <code>string</code></h3>
 <p>添加点的 feature 标识</p>
 <h3 id="_3">示例</h3>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">...</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addPoint</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 名称</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 颜色</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// 半径，单位：像素</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">yaw</span><span class="o">:</span><span class="w"> </span><span class="kt">0</span><span class="p">,</span><span class="w"> </span><span class="c1">// 朝向角度</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">enableSelect</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="c1">// 是否允许选择</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">});</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TypeScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span>
+<span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">...</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addPoint</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 名称</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 颜色</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// 半径，单位：像素</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nx">yaw</span><span class="o">:</span><span class="w"> </span><span class="kt">0</span><span class="p">,</span><span class="w"> </span><span class="c1">// 朝向角度</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nx">enableSelect</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="w"> </span><span class="c1">// 是否允许选择</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">});</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="addlinecoordinates-properties-opt-string"><code>addLine(coordinates, properties opt) -&gt; {string}</code></h2>
 <p>向地图中添加线</p>
 <h3 id="_4">参数</h3>
@@ -2199,14 +2172,20 @@
 <h3 id="string_1">返回值 <code>string</code></h3>
 <p>添加线的 feature 标识</p>
 <h3 id="_5">示例</h3>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">...</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addLine</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 颜色</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// 宽度，单位：像素</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nx">dash</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;dash&#39;</span><span class="w"> </span><span class="c1">// 虚线</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">});</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TypeScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">...</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addLine</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// 颜色</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// 宽度，单位：像素</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="nx">dash</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;dash&#39;</span><span class="w"> </span><span class="c1">// 虚线</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">});</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="addmarkerimgsrc-coordinates-yaw-any"><code>addMarker(imgSrc, coordinates, yaw) -&gt; {any}</code></h2>
 <p>向地图中添加 marker</p>
 <h3 id="_6">参数</h3>
@@ -2239,10 +2218,12 @@
 <h3 id="any">返回值 <code>any</code></h3>
 <p>marker 对象</p>
 <h3 id="_7">示例</h3>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">...</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">axMap</span><span class="p">.</span><span class="nx">addMarker</span><span class="p">(</span><span class="s2">&quot;&lt;imgSrc&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TypeScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">...</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">axMap</span><span class="p">.</span><span class="nx">addMarker</span><span class="p">(</span><span class="s2">&quot;&lt;imgSrc&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="setmarkerpropertiesmarker-coordinates-yaw-void"><code>setMarkerProperties(marker, coordinates, yaw) -&gt; {void}</code></h2>
 <p>设置 marker 属性</p>
 <h3 id="_8">参数</h3>
@@ -2275,10 +2256,12 @@
 <h3 id="_9">返回值</h3>
 <p>无</p>
 <h3 id="_10">示例</h3>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">...</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">setMarkerProperties</span><span class="p">(</span><span class="nx">marker</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TypeScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">...</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">setMarkerProperties</span><span class="p">(</span><span class="nx">marker</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="removemarkermarker-void"><code>removeMarker(marker) -&gt; {void}</code></h2>
 <p>从地图中删除 marker</p>
 <h3 id="_11">参数</h3>
@@ -2301,10 +2284,12 @@
 <h3 id="_12">返回值</h3>
 <p>无</p>
 <h3 id="_13">示例</h3>
-<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">...</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">removeMarker</span><span class="p">(</span><span class="nx">marker</span><span class="p">);</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-typescript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TypeScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">...</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">removeMarker</span><span class="p">(</span><span class="nx">marker</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 
 
 

@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://yonoka.github.io/en/AXRobot/AXRobot-getState/">
+      
       
         <link rel="prev" href="../AXRobot-getRouteMode/">
       
@@ -288,23 +290,6 @@
         
   
   
-  
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
     
   
   
@@ -399,26 +384,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -456,10 +421,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -470,8 +435,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             En
           </label>
@@ -761,10 +726,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -775,8 +740,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_7">
             <span class="md-nav__icon md-icon"></span>
             AXRobot
           </label>
@@ -2104,10 +2069,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2118,8 +2083,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Zh
           </label>
@@ -2667,29 +2632,50 @@
 <h3 id="return-value-promiseany">Return value <code>Promise.&lt;any&gt;</code></h3>
 <p>The current state of the robot</p>
 <h3 id="example">Example</h3>
-<p>```javascript
-...
-const state = await axRobot.getState();
-console.log(state.isManualMode); // whether to push the mode
-console.log(state.isTasking); // Whether the task is being executed
-console.log(state.isCharging); // is charging
-console.log(state.isRemoteMode); // Whether remote control
-console.log(state.battery); // current battery (percentage)
-console.log(state.robotId); // Robot ID
-console.log(state.speed); // current speed (m/s)
-console.log(state.areaId); // current area ID
-console.log(state.isEmergencyStop); // Whether emergency stop state
-console.log(state.x); // x component of position coordinates
-console.log(state.y); // y component of position coordinates
-console.log(state.yaw); // current angle (radians)
-console.log(state.locQuality); // Current positioning quality (0-100)
-console.log(state.hasObstruction); // Is there an obstacle currently
-console.log(state.errors); // fault code
-console.log(state.isGoHome); // Whether it is returning to the pile for charging
-console.log(state.timestamp); // timestamp of robot state</p>
-<p>// do something
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">...</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axRobot</span><span class="p">.</span><span class="nx">getState</span><span class="p">();</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isManualMode</span><span class="p">);</span><span class="w"> </span><span class="c1">// whether to push the mode</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isTasking</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether the task is being executed</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isCharging</span><span class="p">);</span><span class="w"> </span><span class="c1">// is charging</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isRemoteMode</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether remote control</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">battery</span><span class="p">);</span><span class="w"> </span><span class="c1">// current battery (percentage)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">robotId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Robot ID</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">speed</span><span class="p">);</span><span class="w"> </span><span class="c1">// current speed (m/s)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">areaId</span><span class="p">);</span><span class="w"> </span><span class="c1">// current area ID</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isEmergencyStop</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether emergency stop state</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// x component of position coordinates</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span><span class="w"> </span><span class="c1">// y component of position coordinates</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">yaw</span><span class="p">);</span><span class="w"> </span><span class="c1">// current angle (radians)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">locQuality</span><span class="p">);</span><span class="w"> </span><span class="c1">// Current positioning quality (0-100)</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">hasObstruction</span><span class="p">);</span><span class="w"> </span><span class="c1">// Is there an obstacle currently</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">errors</span><span class="p">);</span><span class="w"> </span><span class="c1">// fault code</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">isGoHome</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether it is returning to the pile for charging</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">);</span><span class="w"> </span><span class="c1">// timestamp of robot state</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="c1">// do something</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 
 
 

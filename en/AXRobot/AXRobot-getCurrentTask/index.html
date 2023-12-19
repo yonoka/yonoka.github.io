@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://yonoka.github.io/en/AXRobot/AXRobot-getCurrentTask/">
+      
       
         <link rel="prev" href="../AXRobot-getBusinessId/">
       
@@ -288,23 +290,6 @@
         
   
   
-  
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
     
   
   
@@ -399,26 +384,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -456,10 +421,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -470,8 +435,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             En
           </label>
@@ -761,10 +726,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -775,8 +740,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_7">
             <span class="md-nav__icon md-icon"></span>
             AXRobot
           </label>
@@ -2095,10 +2060,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2109,8 +2074,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Zh
           </label>
@@ -2662,24 +2627,40 @@
 </tbody>
 </table>
 <h3 id="example">Example</h3>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">...</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">task</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axRobot</span><span class="p">.</span><span class="nx">getCurrentTask</span><span class="p">();</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isCancel</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether the task has been canceled</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">runType</span><span class="p">);</span><span class="w"> </span><span class="c1">// run type; 0-timed disinfecting 1-temporary disinfecting 20-fast meal delivery 21-multi-point meal delivery 22-leading 23-cruising 24-returning 25-returning to pile charging</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">businessId</span><span class="p">);</span><span class="w"> </span><span class="c1">// The business ID to which the task belongs</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">robotId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Robot ID</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">buildingId</span><span class="p">);</span><span class="w"> </span><span class="c1">// building ID</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isExecute</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether it has been executed</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskType</span><span class="p">);</span><span class="w"> </span><span class="c1">// task type; 0-disinfect 1-recharge pile 2-restaurant</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskPts</span><span class="p">);</span><span class="w"> </span><span class="c1">// Task node information, please refer to the description of starting the task execution</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">createTime</span><span class="p">);</span><span class="w"> </span><span class="c1">// task creation time</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">runNum</span><span class="p">);</span><span class="w"> </span><span class="c1">// The number of times the task is run</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// task name</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">busiType</span><span class="p">);</span><span class="w"> </span><span class="c1">// business type</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isDel</span><span class="p">);</span><span class="w"> </span><span class="c1">// Is it deleted</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskId</span><span class="p">);</span><span class="w"> </span><span class="c1">// task ID</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">...</span>
-</span></code></pre></div>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">...</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">task</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">axRobot</span><span class="p">.</span><span class="nx">getCurrentTask</span><span class="p">();</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isCancel</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether the task has been canceled</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">runType</span><span class="p">);</span><span class="w"> </span><span class="c1">// run type; 0-timed disinfecting 1-temporary disinfecting 20-fast meal delivery 21-multi-point meal delivery 22-leading 23-cruising 24-returning 25-returning to pile charging</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">businessId</span><span class="p">);</span><span class="w"> </span><span class="c1">// The business ID to which the task belongs</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">robotId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Robot ID</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">buildingId</span><span class="p">);</span><span class="w"> </span><span class="c1">// building ID</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isExecute</span><span class="p">);</span><span class="w"> </span><span class="c1">// Whether it has been executed</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskType</span><span class="p">);</span><span class="w"> </span><span class="c1">// task type; 0-disinfect 1-recharge pile 2-restaurant</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskPts</span><span class="p">);</span><span class="w"> </span><span class="c1">// Task node information, please refer to the description of starting the task execution</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">createTime</span><span class="p">);</span><span class="w"> </span><span class="c1">// task creation time</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">runNum</span><span class="p">);</span><span class="w"> </span><span class="c1">// The number of times the task is run</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// task name</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">busiType</span><span class="p">);</span><span class="w"> </span><span class="c1">// business type</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">isDel</span><span class="p">);</span><span class="w"> </span><span class="c1">// Is it deleted</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">task</span><span class="p">.</span><span class="nx">taskId</span><span class="p">);</span><span class="w"> </span><span class="c1">// task ID</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 
 
 

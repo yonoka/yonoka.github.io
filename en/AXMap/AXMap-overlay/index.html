@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://yonoka.github.io/en/AXMap/AXMap-overlay/">
+      
       
         <link rel="prev" href="../AXMap-other/">
       
@@ -288,23 +290,6 @@
         
   
   
-  
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
     
   
   
@@ -399,26 +384,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -456,10 +421,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -470,8 +435,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             En
           </label>
@@ -620,10 +585,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -634,8 +599,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             AXMap
           </label>
@@ -1411,10 +1376,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1425,8 +1390,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Zh
           </label>
@@ -2162,17 +2127,24 @@
 <h3 id="return-value-string">Return value <code>string</code></h3>
 <p>feature identifier of the added point</p>
 <h3 id="example">Example</h3>
-<p>```javascript
-...
-axMap.addPoint([0, 0], {
-  name: "test", // name
-  color: "#f00", // color
-  radius: 2, // radius, unit: pixel
-  yaw: 0, // facing angle
-  enableSelect: true // whether to allow selection
-});
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span>
+<span class="normal"><a href="#__codelineno-0-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">...</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addPoint</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// name</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// color</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// radius, unit: pixel</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">  </span><span class="nx">yaw</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="c1">// facing angle</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nx">enableSelect</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c1">// whether to allow selection</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">});</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="addlinecoordinates-properties-opt-string"><code>addLine(coordinates, properties opt) -&gt; {string}</code></h2>
 <p>Add lines to the map</p>
 <h3 id="parameters_1">Parameters</h3>
@@ -2200,15 +2172,20 @@ axMap.addPoint([0, 0], {
 <h3 id="return-value-string_1">Return value <code>string</code></h3>
 <p>The feature ID of the added line</p>
 <h3 id="example_1">Example</h3>
-<p>```javascript
-...
-axMap.addLine([[0, 0], [10, 10], {
-  color: "#f00", // color
-  width: 2, // width, unit: pixel
-  dash: 'dash' // dashed line
-});
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">...</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">addLine</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">],</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// color</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="c1">// width, unit: pixel</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">  </span><span class="nx">dash</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;dash&#39;</span><span class="w"> </span><span class="c1">// dashed line</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="p">});</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="addmarkerimgsrc-coordinates-yaw-any"><code>addMarker(imgSrc, coordinates, yaw) -&gt; {any}</code></h2>
 <p>Add a marker to the map</p>
 <h3 id="parameters_2">Parameters</h3>
@@ -2241,11 +2218,12 @@ axMap.addLine([[0, 0], [10, 10], {
 <h3 id="return-value-any">Return value <code>any</code></h3>
 <p>marker object</p>
 <h3 id="example_2">Example</h3>
-<p>```javascript
-...
-const marker = axMap.addMarker("<imgSrc>", [0, 0], 0);
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">...</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">axMap</span><span class="p">.</span><span class="nx">addMarker</span><span class="p">(</span><span class="s2">&quot;&lt;imgSrc&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="setmarkerpropertiesmarker-coordinates-yaw-void"><code>setMarkerProperties(marker, coordinates, yaw) -&gt; {void}</code></h2>
 <p>Set marker properties</p>
 <h3 id="parameters_3">Parameters</h3>
@@ -2278,11 +2256,12 @@ const marker = axMap.addMarker("<imgSrc>", [0, 0], 0);
 <h3 id="return-value">return value</h3>
 <p>none</p>
 <h3 id="example_3">Example</h3>
-<p>```javascript
-...
-axMap.setMarkerProperties(marker, [1, 1], 0);
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">...</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">setMarkerProperties</span><span class="p">(</span><span class="nx">marker</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">],</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="removemarkermarker-void"><code>removeMarker(marker) -&gt; {void}</code></h2>
 <p>remove marker from map</p>
 <h3 id="parameters_4">Parameters</h3>
@@ -2305,11 +2284,12 @@ axMap.setMarkerProperties(marker, [1, 1], 0);
 <h3 id="return-value_1">return value</h3>
 <p>none</p>
 <h3 id="example_4">Example</h3>
-<p>```javascript
-...
-axMap.removeMarker(marker);
-...
-````</p>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">...</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nx">axMap</span><span class="p">.</span><span class="nx">removeMarker</span><span class="p">(</span><span class="nx">marker</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">...</span>
+</code></pre></div></td></tr></table></div>
 
 
 
