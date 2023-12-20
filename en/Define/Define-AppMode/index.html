@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://yonoka.github.io/en/Define/Define-RequestPage/">
+        <link rel="canonical" href="https://yonoka.github.io/en/Define/Define-AppMode/">
       
       
-        <link rel="prev" href="../Define-Pose/">
+        <link rel="prev" href="../Define-ActionType/">
       
       
-        <link rel="next" href="../Define-RequestParam/">
+        <link rel="next" href="../Define-BaseAction/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>RequestPage - AXSDK</title>
+        <title>AppMode - AXSDK</title>
       
     
     
@@ -118,7 +118,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requestpage" class="md-skip">
+        <a href="#appmode" class="md-skip">
           Skip to content
         </a>
       
@@ -158,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RequestPage
+              AppMode
             
           </span>
         </div>
@@ -910,10 +910,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Define-AppMode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    AppMode
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -922,6 +942,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enum
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1225,30 +1274,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    RequestPage
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Define-RequestPage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1257,35 +1286,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Attributes
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2051,9 +2051,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
+  <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
-      Attributes
+      Enum
     </span>
   </a>
   
@@ -2077,30 +2077,33 @@
   
 
 
-<h1 id="requestpage">RequestPage</h1>
-<p>Pagination request parameters</p>
-<h2 id="attributes">Attributes</h2>
+<h1 id="appmode">AppMode</h1>
+<p>App Mode</p>
+<h2 id="enum">Enum</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Data Type</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>pageSize</code></td>
-<td>number</td>
-<td>Number of paging records</td>
+<td><code>AppMode.WAN_APP</code></td>
+<td>Wide Area Network (WAN) mode is primarily designed for mini-programs, mobile terminal apps, and PC web.</td>
 </tr>
 <tr>
-<td><code>pageNum</code></td>
-<td>number</td>
-<td>pagination page number</td>
+<td><code>AppMode.LOCAL_APP</code></td>
+<td>Local mode is mainly intended for upper computer terminal apps, and so on.</td>
+</tr>
+<tr>
+<td><code>AppMode.LAN_APP</code></td>
+<td>Local Area Network (LAN) mode is primarily aimed at mobile terminals within Wi-Fi LAN, such as pads and smartphones.</td>
 </tr>
 </tbody>
 </table>
+<div class="language-javascript highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">axRobot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AXRobot</span><span class="p">(</span><span class="s2">&quot;&lt;appId&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;appSecret&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">AppMode</span><span class="p">.</span><span class="nx">LOCAL_APP</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -2138,7 +2141,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Define-Pose/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pose">
+          <a href="../Define-ActionType/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ActionType">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2148,20 +2151,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Pose
+                ActionType
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Define-RequestParam/" class="md-footer__link md-footer__link--next" aria-label="Next: RequestParam">
+          <a href="../Define-BaseAction/" class="md-footer__link md-footer__link--next" aria-label="Next: BaseAction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                RequestParam
+                BaseAction
               </div>
             </div>
             <div class="md-footer__button md-icon">
