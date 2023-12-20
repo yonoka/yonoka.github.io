@@ -28,6 +28,7 @@ if (successed) {
 
 > * **appId** - 应用 ID，可向相关运营人员申请提供
 > * **appSecret** - 数据请求密钥，可向相关运营人员申请提供
+> * **AppMode** - [AppMode](../Define/Define-AppMode)
 
 [示例](https://service.autoxing.com/sdk/v1.0/example/#/)
 
